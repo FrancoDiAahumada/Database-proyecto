@@ -5,4 +5,4 @@ __pycache__/
 .venv/
 *.sqlite3
 .DS_Store
-.key-etl/
+key-etl.json
