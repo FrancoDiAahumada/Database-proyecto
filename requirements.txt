@@ -1,0 +1,21 @@
+# Base
+pandas>=1.5.3
+python-dotenv>=0.21
+
+# PostgreSQL driver
+psycopg2-binary>=2.9
+
+# Google Cloud SDKs
+google-cloud-bigquery>=3.4
+google-cloud-secret-manager>=2.10
+google-cloud-storage>=2.7
+
+# Cloud Functions framework (para probar localmente)
+functions-framework>=3.0
+
+# Testing y calidad
+pytest>=7.0
+pytest-mock>=3.10
+
+# Opcional (para logs más bonitos)
+rich>=13.0
