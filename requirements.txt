@@ -15,7 +15,7 @@ functions-framework>=3.0
 
 # Testing y calidad
 pytest>=7.0
-pytest-mock>=3.10
+pytest-mock>=3.10 
 
 # Opcional (para logs más bonitos)
 rich>=13.0
