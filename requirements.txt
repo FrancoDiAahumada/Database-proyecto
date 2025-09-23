@@ -4,6 +4,7 @@ python-dotenv>=0.21
 
 # PostgreSQL driver
 psycopg2-binary>=2.9
+SQLAlchemy>=2.0   # <-- agregado
 
 # Google Cloud SDKs
 google-cloud-bigquery>=3.4
@@ -19,3 +20,6 @@ pytest-mock>=3.10
 
 # Opcional (para logs más bonitos)
 rich>=13.0
+
+
+
