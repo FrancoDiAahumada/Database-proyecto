@@ -34,5 +34,14 @@ def main():
     except Exception as e:
         print(f"[ERROR] Falló la carga a BigQuery: {e}")
 
+# --- ENTRYPOINT para Cloud Function ---
+def etl_entrypoint(request):
+    """
+    Handler que usa Google Cloud Functions.
+    No recibe parámetros, solo ejecuta el pipeline.
+    """
+    main()
+    return "ETL ejecutado con éxito."
+
 if __name__ == "__main__":
     main()
