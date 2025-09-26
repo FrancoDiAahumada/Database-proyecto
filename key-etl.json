@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "database-proyecto-473020",
+  "private_key_id": "79d543ddd3b23d550aa8a006a5fee14ad39168c0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoNIrF091pAuN1\nFuSsHY1mAbbAoPllHuHrfTSI1/fWWywN9axl3Ws8KX7MnYydG4NSLgfXOofCIpPm\nQfGs8tVInDJqPI3aixfx30DoCt3kAdPtTmDs2vp6UKeEns9CUPlwjUSdS16HZ1gq\n0UeEO/DgWGi43tQwfpy32ZwqjYkDQr714ydlhvDQEsfD4ZqcmfSZMn/VeXyQt7cV\n8trOm9QqAJcirdW5MdqGvTn9QGwHenp4x5qhu1CxvGxqPaFha4/u8J3UmOFt4qCU\nmTZUuy+iauE/twfn0UpKeJd4XzBGCZRyC11oY5GN4bht1iIjgCXxT5FzcKI8LYpM\nkh3dI0CnAgMBAAECggEAG37/TRMdnLFur5t5mmh4TqZVaAwdyKRxkkEU3zvNVUVG\nddUPr1UwgZSs7X43ArsBJA7HPwKKjQyBoysWJSCgXJlqpQgsuNQdABpv2J68zVgT\n0IqL+JwGmbZpM++RT4oUxIvV8rqOg3w8IupevPneyJBbNMFO7CB+YOVvNwY3prMJ\nr5WEalEN6q1/ukV9b8O/x90jiWMzQf5yOQwchBpUcu32ihL/9fNRNOcDB4xjzNh5\nIUAGGvhB85Lidf8sEHRN/2Ie3C/p1AIkGJik2VOz9DpIEDe1uvq3zuM2pBrWyDuK\ndM5izbiBC3jlSJwaZIMQJ4gxzjEEkZFzHk2UbkEtkQKBgQDplrFRDawNYXnWnx2a\nYa1hQAcCKGtFmm/cLCrwEtfaiWP7MwlBRGnrkTRffbx443Rl79URsBAlBreTvxsz\nKbztFexHzVNMPPfOTNikXs6frJXO3C4ft1gziUINm7yxDNVaJpt0BgC01ANltKRK\nX7ajpVthD/QuNyBu8Bs7qNOslwKBgQC4V+3x/JXsZ0Fl2ziUZvGaxO4XzKsEAevJ\ni4osLdP200wCXVwSN5XIxru9xh0U86DPbku/3mVcXSJnmKTXL1RpHWl1FvDhMZI3\nl8ogNY+4Z9d2YYRcLNiW9A4M4xRCfpX3EUIxPI0+OsSY3pckJB3EAw4m2E8h7XMc\nF4k+9sS+cQKBgQCXVVzdkUkFhkBkTsPkECI+3jdsK3mMJ4kPEMJktSCJYfeXeDIn\nycYBqxpOP2zKuTnhDOdyxSlAg8CNhQN/Oyw+QbTJs/mia+F0E49LtmyRQEPyN+3d\n+G+5O9TCckJmRlU3Scnu+jCc9rqYutaxpJ70GJ5CHQ7qniZyGTbbiP5SUwKBgHYs\nwDg6AW5sfyspzuqr18Ss7ClLpnJKPPqWPry1oEWCDR8S9HwlMBtm82HkCC6vQ+7W\nOS9GBdqhRfX9j+b2y3kbRsiuLTtgCOkkoInnbDv+Lc0RFMX2Zd7Xk85FIG7EMaUS\nZkmkFLPI/tE1GNUtZfuLLd5PGuOYEgv3Np+rmFKxAoGAAMvxZl5YbIKO+TBmtQo3\nVxOk91UIysa17vwSLNJoIn1TGXp/Iy/U0bdzV9oAstdgSERygEjIBCxmjhWs24Ap\nauifGQ0gxJJdFPbREi1BOzL3e5QXJYhq+DSi15nS/7YHi3iaPZ1fauucAUraSJ7r\nv0zp2OzF+6yCN8usNMGLw44=\n-----END PRIVATE KEY-----\n",
+  "client_email": "etl-northwind-sa@database-proyecto-473020.iam.gserviceaccount.com",
+  "client_id": "111665383741964301289",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/etl-northwind-sa%40database-proyecto-473020.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
