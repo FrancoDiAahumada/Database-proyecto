@@ -1,8 +1,7 @@
+import functions_framework
 from extract import extract_data
 from transform import calculate_sales_by_customer
 from load import load_to_bigquery
-
-
 
 def main():
     # Query corregida con unión a clientes para obtener company_name 
@@ -21,7 +20,7 @@ def main():
     
     if df_orders.empty:
         print("⚠️ No se extrajeron datos de la base de datos. Abortando ETL.")
-        return
+        return "No data extracted"
 
     print(f"[INFO] Se extrajeron {df_orders.shape[0]} filas.")
 
@@ -33,17 +32,21 @@ def main():
     try:
         load_to_bigquery(df_summary)
         print("[INFO] ETL completado con éxito.")
+        return "ETL ejecutado con éxito"
     except Exception as e:
         print(f"[ERROR] Falló la carga a BigQuery: {e}")
+        return f"Error: {e}"
 
-# --- ENTRYPOINT para Cloud Function ---
+@functions_framework.http
 def etl_entrypoint(request):
     """
     Handler que usa Google Cloud Functions.
-    No recibe parámetros, solo ejecuta el pipeline.
     """
-    main()
-    return "ETL ejecutado con éxito."
+    try:
+        result = main()
+        return {"status": "success", "message": result}
+    except Exception as e:
+        return {"status": "error", "message": str(e)}, 500
 
 if __name__ == "__main__":
     main()
