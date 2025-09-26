@@ -2,8 +2,10 @@ from extract import extract_data
 from transform import calculate_sales_by_customer
 from load import load_to_bigquery
 
+
+
 def main():
-    # Query corregida con unión a clientes para obtener company_name
+    # Query corregida con unión a clientes para obtener company_name 
     query = """
     SELECT c.customer_id,
            c.company_name,
