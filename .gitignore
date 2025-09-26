@@ -65,4 +65,4 @@ logs/
 
 # Temporary files
 *.tmp
-*.temp
+*.tempkey-etl.json
