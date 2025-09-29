@@ -1,0 +1,193 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 11,
+  "lineage": "8769b54b-06ed-1d32-f08d-d5116454a3d7",
+  "outputs": {
+    "bigquery_dataset": {
+      "value": "northwind_dataset",
+      "type": "string"
+    },
+    "function_uri": {
+      "value": null,
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "archive_file",
+      "name": "function_zip",
+      "provider": "provider[\"registry.terraform.io/hashicorp/archive\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "exclude_symlink_directories": null,
+            "excludes": [
+              "*.pyc",
+              "*.sql",
+              ".env",
+              "__pycache__"
+            ],
+            "id": "2fcb8598f309f87089c074f3607b953f2e378990",
+            "output_base64sha256": "4916p16NOqhCHutavjbZA0x++f/iJ2/wE8VfNR+nIzI=",
+            "output_base64sha512": "3PyCtuRHafoU1v2pg5D7BGDBOCC9gQWxvhTkrGCDGJfpvDp6SoLSEyH9QhjXPiBg1DgiJDN+ak73nfob6cgmMg==",
+            "output_file_mode": null,
+            "output_md5": "0d892326f274642298a70016a9e63a49",
+            "output_path": "./function.zip",
+            "output_sha": "2fcb8598f309f87089c074f3607b953f2e378990",
+            "output_sha256": "e3dd7aa75e8d3aa8421eeb5abe36d9034c7ef9ffe2276ff013c55f351fa72332",
+            "output_sha512": "dcfc82b6e44769fa14d6fda98390fb0460c13820bd8105b1be14e4ac60831897e9bc3a7a4a82d21321fd4218d73e2060d4382224337e6a4ef79dfa1be9c82632",
+            "output_size": 3378,
+            "source": [],
+            "source_content": null,
+            "source_content_filename": null,
+            "source_dir": "./../ETL",
+            "source_file": null,
+            "type": "zip"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_bigquery_dataset",
+      "name": "northwind",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "access": [
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "iam_member": "",
+                "role": "OWNER",
+                "routine": [],
+                "special_group": "",
+                "user_by_email": "francodomino2024@gmail.com",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "iam_member": "",
+                "role": "OWNER",
+                "routine": [],
+                "special_group": "projectOwners",
+                "user_by_email": "",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "iam_member": "",
+                "role": "READER",
+                "routine": [],
+                "special_group": "projectReaders",
+                "user_by_email": "",
+                "view": []
+              },
+              {
+                "dataset": [],
+                "domain": "",
+                "group_by_email": "",
+                "iam_member": "",
+                "role": "WRITER",
+                "routine": [],
+                "special_group": "projectWriters",
+                "user_by_email": "",
+                "view": []
+              }
+            ],
+            "creation_time": 2017729736,
+            "dataset_id": "northwind_dataset",
+            "default_collation": "",
+            "default_encryption_configuration": [],
+            "default_partition_expiration_ms": 0,
+            "default_table_expiration_ms": 0,
+            "delete_contents_on_destroy": false,
+            "description": "",
+            "effective_labels": {},
+            "etag": "9UNVfgprs96yHdL+qSZZAQ==",
+            "external_dataset_reference": [],
+            "friendly_name": "",
+            "id": "projects/database-proyecto-473020/datasets/northwind_dataset",
+            "is_case_insensitive": false,
+            "labels": {},
+            "last_modified_time": 2017729736,
+            "location": "US",
+            "max_time_travel_hours": "168",
+            "project": "database-proyecto-473020",
+            "resource_tags": {},
+            "self_link": "https://bigquery.googleapis.com/bigquery/v2/projects/database-proyecto-473020/datasets/northwind_dataset",
+            "storage_billing_model": "",
+            "terraform_labels": {},
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMCJ9"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "function_bucket",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "autoclass": [],
+            "cors": [],
+            "custom_placement_config": [],
+            "default_event_based_hold": false,
+            "effective_labels": {},
+            "enable_object_retention": false,
+            "encryption": [],
+            "force_destroy": false,
+            "id": "northwind-backup-473020",
+            "labels": {},
+            "lifecycle_rule": [],
+            "location": "US",
+            "logging": [],
+            "name": "northwind-backup-473020",
+            "project": "database-proyecto-473020",
+            "project_number": 1346641517,
+            "public_access_prevention": "inherited",
+            "requester_pays": false,
+            "retention_policy": [],
+            "rpo": "DEFAULT",
+            "self_link": "https://www.googleapis.com/storage/v1/b/northwind-backup-473020",
+            "soft_delete_policy": [
+              {
+                "effective_time": "2025-09-29T13:01:47.362Z",
+                "retention_duration_seconds": 604800
+              }
+            ],
+            "storage_class": "STANDARD",
+            "terraform_labels": {},
+            "timeouts": null,
+            "uniform_bucket_level_access": false,
+            "url": "gs://northwind-backup-473020",
+            "versioning": [],
+            "website": []
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMCwidXBkYXRlIjoyNDAwMDAwMDAwMDB9LCJzY2hlbWFfdmVyc2lvbiI6IjIifQ=="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

@@ -1,25 +1,19 @@
-# Base
-pandas>=1.5.3
-python-dotenv>=0.21
+# Core data processing - VERSIONES COMPATIBLES CON PYTHON 3.12
+pandas>=2.1.0
+numpy>=1.26.0
+pyarrow>=14.0.0
 
-# PostgreSQL driver
-psycopg2-binary>=2.9
-SQLAlchemy>=2.0   # <-- agregado
+# PostgreSQL
+psycopg2-binary>=2.9.9
+SQLAlchemy>=2.0.23
 
-# Google Cloud SDKs
-google-cloud-bigquery>=3.4
-google-cloud-secret-manager>=2.10
-google-cloud-storage>=2.7
+# Google Cloud
+google-cloud-bigquery>=3.13.0
+google-cloud-storage>=2.13.0
+pandas-gbq>=0.21.0
 
-# Cloud Functions framework (para probar localmente)
-functions-framework>=3.0
+# Cloud Functions
+functions-framework>=3.5.0
 
-# Testing y calidad
-pytest>=7.0
-pytest-mock>=3.10 
-
-# Opcional (para logs más bonitos)
-rich>=13.0
-
-
-
+# Utilities
+python-dotenv>=1.0.0
