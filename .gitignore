@@ -1,8 +1,25 @@
-__pycache__/
-*.pyc
+# Archivos de configuración sensibles
+*.json
+key-*
+*key*.json
+service-account*.json
+credentials*.json
+
+# Variables de entorno
 .env
-.env.local
-.venv/
-*.sqlite3
+.env.*
+env.yaml
+.env.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Archivos del sistema
 .DS_Store
-key-etl.json
+Thumbs.db
+
+# Logs
+*.log
